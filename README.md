@@ -11,9 +11,9 @@ from pmapv import pflatmapv, pmapv
 
 add1 = lambda x: x + 1
 
-pflatmapv([[1], [2], [3]], add1)
+pflatmapv(add1, [[1], [2], [3]])
 # => [2, 3, 4]
 
-pmapv([1, 2, 3], add1)
+pmapv(add1, [1, 2, 3])
 # => [2, 3, 4]
 ```
